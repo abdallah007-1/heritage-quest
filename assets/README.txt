@@ -1,0 +1,2 @@
+No mandatory local image/model files are required for the current prototype.
+Destination images are linked in data.js to Wikimedia Commons Special:FilePath URLs; the site requires an internet connection to load them. Review each source page's license before reuse. Put any properly licensed local replacement images or approved 3D models in this folder and update the relevant paths in data.js / index.html.

@@ -1,0 +1,1454 @@
+{
+  "dataset_name": "HERITAGE QUEST — Egypt Accessible Heritage Starter Dataset",
+  "dataset_version": "0.1.0",
+  "last_researched": "2026-10-19",
+  "scope": "Pilot dataset focused on Cairo/Giza heritage locations; not a comprehensive national database.",
+  "currency": {
+    "base": "EGP",
+    "conversion": "USD",
+    "egp_per_usd": 53.54,
+    "rate_date": "2026-10-19",
+    "source_url": "https://www.investing.com/currencies/usd-egp-historical-data",
+    "disclaimer_en": "USD ticket equivalents are indicative conversions, not prices charged in USD. EGP prices and currency rates can change; official ticketing channels take precedence.",
+    "disclaimer_ar": "القيم المقابلة بالدولار تحويلات تقريبية وليست أسعارًا محصلة بالدولار. قد تتغير أسعار الجنيه وسعر الصرف؛ وتُقدَّم قنوات الحجز الرسمية على هذه البيانات."
+  },
+  "data_quality_rules": [
+    "Coordinates in this starter set are approximate map pins and must be checked against official entrance locations before public launch.",
+    "Accessibility features are shown only where a cited source explicitly lists them; unknown is not equivalent to inaccessible.",
+    "Conflicting ticket price records must not be shown to public users until a current price is confirmed.",
+    "Hospital records marked HOLD/provisional must not be shown as confirmed recommendations until contact details, services, operating status, and accessibility features have been verified.",
+    "Tour-marketplace prices are examples, not guaranteed offers; provider must confirm group size, inclusions, availability, vehicle suitability, step-free routes, and date-specific cost.",
+    "For emergencies in Egypt, call the emergency provider directly; the website is not a medical service."
+  ],
+  "sites": [
+    {
+      "id": "SITE-GEM",
+      "name": {
+        "en": "Grand Egyptian Museum (GEM)",
+        "ar": "المتحف المصري الكبير"
+      },
+      "type": {
+        "en": "Museum",
+        "ar": "متحف"
+      },
+      "city": {
+        "en": "Giza",
+        "ar": "الجيزة"
+      },
+      "coordinates": {
+        "latitude": 30.0131,
+        "longitude": 31.1125,
+        "status_en": "Approximate pin for prototype; verify on-site/official map before public launch.",
+        "status_ar": "إحداثية تقريبية للنموذج الأولي؛ يجب التحقق منها عبر الخريطة الرسمية/ميدانيًا قبل النشر العام.",
+        "map_url": "https://www.openstreetmap.org/?mlat=30.013100&mlon=31.112500#map=16/30.013100/31.112500"
+      },
+      "address": {
+        "en": "El Remayah Square, Cairo–Alexandria Desert Road, Giza, Egypt",
+        "ar": "ميدان الرماية، طريق القاهرة–الإسكندرية الصحراوي، الجيزة، مصر"
+      },
+      "summary": {
+        "en": "A major museum dedicated to ancient Egyptian civilization, near the Giza Pyramids.",
+        "ar": "متحف رئيسي مخصص للحضارة المصرية القديمة، بالقرب من أهرامات الجيزة."
+      },
+      "opening_hours": {
+        "en": "Complex: Sun/Tue/Thu/Fri 08:30–19:00; Wed/Sat 08:30–22:00. Galleries: 09:00–18:00 on regular days; 09:00–21:00 Wed/Sat. Check official site before visiting.",
+        "ar": "المجمع: الأحد/الثلاثاء/الخميس/الجمعة 08:30–19:00؛ الأربعاء/السبت 08:30–22:00. القاعات: 09:00–18:00 في الأيام العادية و09:00–21:00 الأربعاء/السبت. راجع الموقع الرسمي قبل الزيارة."
+      },
+      "accessibility": {
+        "summary_en": "Officially states wheelchair access, ramps, lifts, wide pathways, wheelchairs, golf carts, accessible restrooms, seating/rest points and a tactile/Braille replica. Visitors with disabilities are listed as exempt from admission fees; verify proof/booking conditions with the museum.",
+        "summary_ar": "يؤكد الموقع الرسمي إتاحة الكراسي المتحركة والمنحدرات والمصاعد والممرات الواسعة والكراسي المتحركة وعربات الجولف ودورات المياه المهيأة ومقاعد الراحة ونموذجًا ملموسًا/برايل. يُذكر إعفاء الزوار ذوي الإعاقة من رسوم الدخول؛ يجب تأكيد متطلبات الإثبات/الحجز مع المتحف.",
+        "status": "Official accessibility page available"
+      },
+      "ticket_prices": [
+        {
+          "ticket_id": "T-GEM-FOREIGN-ADULT",
+          "visitor_group_en": "Arab / other nationality adult",
+          "visitor_group_ar": "بالغ من العرب / الجنسيات الأخرى",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 1590,
+          "price_usd_approx": 29.7,
+          "price_status": "Current official portal listing",
+          "notes_en": "Ticket portal lists the tier as Arab or other nationalities; disability exemption exists separately—confirm eligibility and documentation.",
+          "notes_ar": "بوابة التذاكر تعرض فئة العرب أو الجنسيات الأخرى؛ يوجد إعفاء منفصل لذوي الإعاقة، ويجب تأكيد الأهلية والمستندات.",
+          "source_url": "https://tickets.gem.eg/en/AdmissionTkt"
+        },
+        {
+          "ticket_id": "T-GEM-FOREIGN-CHILD",
+          "visitor_group_en": "Arab / other nationality child",
+          "visitor_group_ar": "طفل من العرب / الجنسيات الأخرى",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 800,
+          "price_usd_approx": 14.94,
+          "price_status": "Current official portal listing",
+          "notes_en": "Age eligibility shown by ticket portal; confirm child age bands at booking.",
+          "notes_ar": "الفئة العمرية وفق بوابة التذاكر؛ تأكد من الأعمار عند الحجز.",
+          "source_url": "https://tickets.gem.eg/en/AdmissionTkt"
+        },
+        {
+          "ticket_id": "T-GEM-FOREIGN-STUDENT",
+          "visitor_group_en": "Arab / other nationality student",
+          "visitor_group_ar": "طالب من العرب / الجنسيات الأخرى",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 800,
+          "price_usd_approx": 14.94,
+          "price_status": "Current official portal listing",
+          "notes_en": "Carry valid student ID; confirm accepted document and nationality tier at booking.",
+          "notes_ar": "يجب حمل إثبات طالب ساري؛ تأكد من المستند المقبول وفئة الجنسية عند الحجز.",
+          "source_url": "https://tickets.gem.eg/en/AdmissionTkt"
+        },
+        {
+          "ticket_id": "T-GEM-DISABILITY",
+          "visitor_group_en": "Visitors with disabilities (eligibility to confirm)",
+          "visitor_group_ar": "الزوار ذوو الإعاقة (تُؤكد الأهلية)",
+          "ticket_type_en": "Admission exemption listed",
+          "ticket_type_ar": "إعفاء من رسوم الدخول مذكور",
+          "price_egp": 0,
+          "price_usd_approx": 0.0,
+          "price_status": "Policy listed; confirm proof and booking conditions",
+          "notes_en": "The official FAQ lists visitors with disabilities among groups exempt from admission fees. Do not promise that every international visitor qualifies without direct confirmation.",
+          "notes_ar": "تذكر الأسئلة الشائعة الرسمية الزوار ذوي الإعاقة ضمن الفئات المعفاة. لا تعدوا بإعفاء كل زائر دولي قبل التأكيد المباشر.",
+          "source_url": "https://gem.eg/en/faqs"
+        }
+      ],
+      "official_url": "https://gem.eg/",
+      "accessibility_url": "https://gem.eg/visit/accessibility/",
+      "ticket_url": "https://tickets.gem.eg/en/AdmissionTkt",
+      "history_source_url": "https://gem.eg/en/faqs",
+      "additional_notes": {
+        "en": "Official ticket portal lists EGP 1,590 for Arab/other-nationality adults and EGP 800 for child/student tickets. Disability exemption is stated on the museum FAQ; do not assume how documentation applies to every nationality without confirmation.",
+        "ar": "تُظهر بوابة التذاكر الرسمية ١٥٩٠ جنيهًا للبالغين من العرب/الجنسيات الأخرى و٨٠٠ جنيه لتذاكر الأطفال/الطلاب. يذكر قسم الأسئلة الشائعة إعفاء الزوار ذوي الإعاقة؛ لا تفترضوا شروط الإثبات أو تطبيقها على جميع الجنسيات دون تأكيد."
+      },
+      "last_researched": "2026-10-19"
+    },
+    {
+      "id": "SITE-GIZA-PLATEAU",
+      "name": {
+        "en": "Giza Plateau (Pyramids of Giza)",
+        "ar": "هضبة الجيزة (أهرامات الجيزة)"
+      },
+      "type": {
+        "en": "Archaeological site",
+        "ar": "موقع أثري"
+      },
+      "city": {
+        "en": "Giza",
+        "ar": "الجيزة"
+      },
+      "coordinates": {
+        "latitude": 29.9792,
+        "longitude": 31.1342,
+        "status_en": "Approximate area pin; entrance/gate pin should be verified for routing.",
+        "status_ar": "إحداثية تقريبية للمنطقة؛ يجب التحقق من إحداثية البوابة/المدخل لأغراض التوجيه.",
+        "map_url": "https://www.openstreetmap.org/?mlat=29.979200&mlon=31.134200#map=16/29.979200/31.134200"
+      },
+      "address": {
+        "en": "Giza Plateau, Al Haram, Giza Governorate, Egypt",
+        "ar": "هضبة الجيزة، الهرم، محافظة الجيزة، مصر"
+      },
+      "summary": {
+        "en": "The Giza pyramid complex and Great Sphinx, part of the Memphis and its Necropolis World Heritage property.",
+        "ar": "مجمع أهرامات الجيزة وأبو الهول، ضمن موقع ممفيس ومقبرتها المدرج على قائمة التراث العالمي."
+      },
+      "opening_hours": {
+        "en": "Official MOTA page lists 08:00–16:00; verify seasonal changes and last entry before visiting.",
+        "ar": "تذكر صفحة وزارة السياحة والآثار مواعيد 08:00–16:00؛ تحقق من التغييرات الموسمية وآخر موعد للدخول قبل الزيارة."
+      },
+      "accessibility": {
+        "summary_en": "Full accessibility status not verified. Outdoor terrain, slopes, heat, distances and separate internal-pyramid access may affect different visitors. Contact site management before publishing any accessibility claim.",
+        "summary_ar": "لم يتم التحقق من حالة الإتاحة الشاملة. قد تؤثر طبيعة الأرض الخارجية والمنحدرات والحرارة والمسافات والدخول الداخلي للأهرامات على الزوار بطرق مختلفة. تواصلوا مع إدارة الموقع قبل نشر أي ادعاء بشأن الإتاحة.",
+        "status": "Needs site-level accessibility audit"
+      },
+      "ticket_prices": [
+        {
+          "ticket_id": "T-GIZA-AREA-ADULT",
+          "visitor_group_en": "Foreigner adult (published category)",
+          "visitor_group_ar": "بالغ أجنبي (الفئة المنشورة)",
+          "ticket_type_en": "Area entry only",
+          "ticket_type_ar": "دخول المنطقة فقط",
+          "price_egp": 700,
+          "price_usd_approx": 13.07,
+          "price_status": "Current MOTA listing; nationality tier to verify",
+          "notes_en": "Does not include separate entry to the Great Pyramid or other separately ticketed monuments.",
+          "notes_ar": "لا يشمل الدخول المنفصل للهرم الأكبر أو المعالم التي تحتاج تذاكر إضافية.",
+          "source_url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/"
+        },
+        {
+          "ticket_id": "T-GIZA-AREA-STUDENT",
+          "visitor_group_en": "Foreigner student (published category)",
+          "visitor_group_ar": "طالب أجنبي (الفئة المنشورة)",
+          "ticket_type_en": "Area entry only",
+          "ticket_type_ar": "دخول المنطقة فقط",
+          "price_egp": 350,
+          "price_usd_approx": 6.54,
+          "price_status": "Current MOTA listing; nationality tier to verify",
+          "notes_en": "Does not include separately ticketed pyramid interiors.",
+          "notes_ar": "لا يشمل الدخول الداخلي للأهرامات التي لها تذاكر منفصلة.",
+          "source_url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/"
+        },
+        {
+          "ticket_id": "T-GREATPYRAMID-ADULT",
+          "visitor_group_en": "Foreigner adult (published category)",
+          "visitor_group_ar": "بالغ أجنبي (الفئة المنشورة)",
+          "ticket_type_en": "Additional internal entry; area ticket also required",
+          "ticket_type_ar": "دخول داخلي إضافي؛ يلزم أيضًا تذكرة المنطقة",
+          "price_egp": 1000,
+          "price_usd_approx": 18.68,
+          "price_status": "Current MOTA listing; subject to site rules",
+          "notes_en": "Additional to the Giza Plateau area ticket; do not add it automatically to every visitor package.",
+          "notes_ar": "تضاف إلى تذكرة منطقة أهرامات الجيزة؛ لا تُدرج تلقائيًا في كل باقة زيارة.",
+          "source_url": "https://egymonuments.gov.eg/monuments/the-great-pyramid/"
+        },
+        {
+          "ticket_id": "T-GREATPYRAMID-STUDENT",
+          "visitor_group_en": "Foreigner student (published category)",
+          "visitor_group_ar": "طالب أجنبي (الفئة المنشورة)",
+          "ticket_type_en": "Additional internal entry; area ticket also required",
+          "ticket_type_ar": "دخول داخلي إضافي؛ يلزم أيضًا تذكرة المنطقة",
+          "price_egp": 500,
+          "price_usd_approx": 9.34,
+          "price_status": "Current MOTA listing; subject to site rules",
+          "notes_en": "Additional to the Giza Plateau area ticket.",
+          "notes_ar": "تضاف إلى تذكرة منطقة أهرامات الجيزة.",
+          "source_url": "https://egymonuments.gov.eg/monuments/the-great-pyramid/"
+        }
+      ],
+      "official_url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/",
+      "accessibility_url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/",
+      "ticket_url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/",
+      "history_source_url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/",
+      "additional_notes": {
+        "en": "Foreign adult area entry EGP 700 and student EGP 350; these exclude entry tickets to individual pyramids. The Great Pyramid ticket is listed separately at EGP 1,000 adult / EGP 500 student, in addition to area entry. Published page shows Egyptians and foreigners but no separate Arab tier; confirm applicable nationality category.",
+        "ar": "تذكرة دخول المنطقة للأجانب ٧٠٠ جنيه للبالغ و٣٥٠ للطالب، ولا تشمل تذاكر دخول الأهرامات من الداخل. تذكرة الهرم الأكبر منفصلة بقيمة ١٠٠٠ جنيه للبالغ و٥٠٠ للطالب، بالإضافة إلى تذكرة المنطقة. الصفحة تعرض فئتي المصريين والأجانب دون فئة منفصلة للعرب؛ يجب تأكيد فئة الجنسية المناسبة."
+      },
+      "last_researched": "2026-10-19"
+    },
+    {
+      "id": "SITE-EGYPTIAN-MUSEUM",
+      "name": {
+        "en": "The Egyptian Museum (Tahrir)",
+        "ar": "المتحف المصري بالتحرير"
+      },
+      "type": {
+        "en": "Museum",
+        "ar": "متحف"
+      },
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      },
+      "coordinates": {
+        "latitude": 30.0478,
+        "longitude": 31.2336,
+        "status_en": "Approximate pin near museum entrance; validate before production.",
+        "status_ar": "إحداثية تقريبية بالقرب من مدخل المتحف؛ يجب التحقق منها قبل الإطلاق.",
+        "map_url": "https://www.openstreetmap.org/?mlat=30.047800&mlon=31.233600#map=16/30.047800/31.233600"
+      },
+      "address": {
+        "en": "Tahrir Square, Downtown Cairo, Egypt",
+        "ar": "ميدان التحرير، وسط القاهرة، مصر"
+      },
+      "summary": {
+        "en": "Historic museum with extensive ancient Egyptian collections, including statues, papyri, sarcophagi and jewellery.",
+        "ar": "متحف تاريخي يضم مجموعات واسعة من الآثار المصرية القديمة، بما فيها التماثيل والبرديات والتوابيت والمجوهرات."
+      },
+      "opening_hours": {
+        "en": "Daily 09:00–17:00; ticket window closes at 16:00 according to MOTA.",
+        "ar": "يوميًا 09:00–17:00؛ شباك التذاكر يغلق 16:00 وفقًا لوزارة السياحة والآثار."
+      },
+      "accessibility": {
+        "summary_en": "Official museum amenities page reports wheelchairs, designated ramps and elevators, designated bathrooms, a Braille-supported path featuring 12 artifacts, and an on-site first-aid unit. Confirm route-level access for the planned visit.",
+        "summary_ar": "تذكر صفحة الخدمات الرسمية توفير كراسي متحركة ومنحدرات ومصاعد ودورات مياه مخصصة ومسارًا مدعومًا ببرايل يضم ١٢ قطعة أثرية ووحدة إسعافات أولية داخل المتحف. يجب تأكيد إتاحة المسار المحدد للزيارة.",
+        "status": "Official amenities page available"
+      },
+      "ticket_prices": [
+        {
+          "ticket_id": "T-EMC-FOREIGN-ADULT",
+          "visitor_group_en": "Foreigner adult",
+          "visitor_group_ar": "بالغ أجنبي",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 550,
+          "price_usd_approx": 10.27,
+          "price_status": "Current MOTA listing",
+          "notes_en": "Ticket page lists Egyptian rates separately. For disability concessions, the listed free-entry rule specifically refers to Egyptians with special needs.",
+          "notes_ar": "تذكر صفحة التذاكر أسعارًا منفصلة للمصريين. قاعدة الإعفاء المنشورة تشير تحديدًا إلى المصريين ذوي الاحتياجات الخاصة.",
+          "source_url": "https://egymonuments.gov.eg/en/museums/egyptian-museum/"
+        },
+        {
+          "ticket_id": "T-EMC-FOREIGN-STUDENT",
+          "visitor_group_en": "Foreigner student",
+          "visitor_group_ar": "طالب أجنبي",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 275,
+          "price_usd_approx": 5.14,
+          "price_status": "Current MOTA listing",
+          "notes_en": "Verify student identification and applicable nationality tier at booking.",
+          "notes_ar": "تحقق من إثبات الطالب وفئة الجنسية المناسبة عند الحجز.",
+          "source_url": "https://egymonuments.gov.eg/en/museums/egyptian-museum/"
+        }
+      ],
+      "official_url": "https://egymonuments.gov.eg/en/museums/egyptian-museum/",
+      "accessibility_url": "https://egyptianmuseumcairo.eg/egyptian-museum-cairo-amenities/",
+      "ticket_url": "https://egymonuments.gov.eg/en/museums/egyptian-museum/",
+      "history_source_url": "https://egymonuments.gov.eg/en/museums/egyptian-museum/",
+      "additional_notes": {
+        "en": "MOTA page lists foreign adult EGP 550 / student EGP 275, Egyptian adult EGP 30 / student EGP 10. The free-entry list specifically mentions Egyptians with special needs; verify rules before describing a disability concession for international visitors.",
+        "ar": "تذكر صفحة الوزارة سعر ٥٥٠ جنيهًا للبالغ الأجنبي و٢٧٥ للطالب، و٣٠ جنيهًا للبالغ المصري و١٠ للطالب. قائمة الإعفاء تذكر المصريين ذوي الاحتياجات الخاصة تحديدًا؛ تحققوا من الشروط قبل عرض إعفاء للزوار الدوليين ذوي الإعاقة."
+      },
+      "last_researched": "2026-10-19"
+    },
+    {
+      "id": "SITE-NMEC",
+      "name": {
+        "en": "National Museum of Egyptian Civilization (NMEC)",
+        "ar": "المتحف القومي للحضارة المصرية"
+      },
+      "type": {
+        "en": "Museum",
+        "ar": "متحف"
+      },
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      },
+      "coordinates": {
+        "latitude": 30.0062,
+        "longitude": 31.2481,
+        "status_en": "Approximate pin; confirm exact visitor entrance and parking access.",
+        "status_ar": "إحداثية تقريبية؛ تحقق من مدخل الزوار وموقع انتظار السيارات.",
+        "map_url": "https://www.openstreetmap.org/?mlat=30.006200&mlon=31.248100#map=16/30.006200/31.248100"
+      },
+      "address": {
+        "en": "El-Fustat Road, Ein El-Sira, Cairo, Egypt",
+        "ar": "طريق الفسطاط، عين الصيرة، القاهرة، مصر"
+      },
+      "summary": {
+        "en": "Museum presenting the breadth and continuity of Egyptian civilization across historical periods, including the Royal Mummies Hall.",
+        "ar": "متحف يعرض اتساع واستمرارية الحضارة المصرية عبر العصور، بما في ذلك قاعة المومياوات الملكية."
+      },
+      "opening_hours": {
+        "en": "Regular visit hours listed as 09:00–17:00; MOTA page also lists Friday evening hours 18:00–21:00. Ticket window and seasonal schedules should be checked.",
+        "ar": "مواعيد الزيارة العادية 09:00–17:00؛ وتذكر صفحة الوزارة فترة مسائية يوم الجمعة من 18:00–21:00. يجب التحقق من مواعيد شباك التذاكر والمواعيد الموسمية."
+      },
+      "accessibility": {
+        "summary_en": "Official NMEC accessibility page lists free wheelchairs, designated parking, elevators serving all exhibits, Braille brochures on request, and sign-language tours by advance reservation. MOTA page also lists a ramped entrance.",
+        "summary_ar": "تذكر صفحة الإتاحة الرسمية توفير كراسٍ متحركة مجانًا ومواقف مخصصة ومصاعد تتيح الوصول إلى جميع المعروضات وكتيبات برايل عند الطلب وجولات بلغة الإشارة بالحجز المسبق. وتذكر صفحة الوزارة أيضًا وجود مدخل بمنحدر.",
+        "status": "Official accessibility page available"
+      },
+      "ticket_prices": [
+        {
+          "ticket_id": "T-NMEC-FOREIGN-ADULT",
+          "visitor_group_en": "Foreigner adult",
+          "visitor_group_ar": "بالغ أجنبي",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 550,
+          "price_usd_approx": 10.27,
+          "price_status": "Current MOTA listing",
+          "notes_en": "Verify nationality category and ticket inclusions when booking.",
+          "notes_ar": "تحقق من فئة الجنسية ومحتويات التذكرة عند الحجز.",
+          "source_url": "https://egymonuments.gov.eg/en/museums/national-museum-of-egyptian-civilization-nmec"
+        },
+        {
+          "ticket_id": "T-NMEC-FOREIGN-STUDENT",
+          "visitor_group_en": "Foreigner student",
+          "visitor_group_ar": "طالب أجنبي",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 300,
+          "price_usd_approx": 5.6,
+          "price_status": "Current MOTA listing",
+          "notes_en": "Verify student ID and category when booking.",
+          "notes_ar": "تحقق من إثبات الطالب والفئة عند الحجز.",
+          "source_url": "https://egymonuments.gov.eg/en/museums/national-museum-of-egyptian-civilization-nmec"
+        }
+      ],
+      "official_url": "https://nmec.gov.eg/",
+      "accessibility_url": "https://nmec.gov.eg/accessibility/",
+      "ticket_url": "https://egymonuments.gov.eg/en/museums/national-museum-of-egyptian-civilization-nmec",
+      "history_source_url": "https://egymonuments.gov.eg/en/museums/national-museum-of-egyptian-civilization-nmec",
+      "additional_notes": {
+        "en": "MOTA page lists foreign adult EGP 550 and student EGP 300; Egyptian adult EGP 90 and student EGP 45. The published free-entry rule for Egyptians with special needs has day restrictions. Verify eligibility for international guests directly.",
+        "ar": "تذكر صفحة الوزارة ٥٥٠ جنيهًا للبالغ الأجنبي و٣٠٠ للطالب، و٩٠ جنيهًا للبالغ المصري و٤٥ للطالب. للإعفاء المعلن للمصريين ذوي الاحتياجات الخاصة قيود مرتبطة بأيام الزيارة. تحقق من أهلية الزوار الدوليين مباشرة."
+      },
+      "last_researched": "2026-10-19"
+    },
+    {
+      "id": "SITE-ISLAMIC-ART",
+      "name": {
+        "en": "Museum of Islamic Art",
+        "ar": "متحف الفن الإسلامي"
+      },
+      "type": {
+        "en": "Museum",
+        "ar": "متحف"
+      },
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      },
+      "coordinates": {
+        "latitude": 30.0444,
+        "longitude": 31.255,
+        "status_en": "Approximate pin; verify official entrance pin before public launch.",
+        "status_ar": "إحداثية تقريبية؛ تحقق من موقع المدخل الرسمي قبل النشر.",
+        "map_url": "https://www.openstreetmap.org/?mlat=30.044400&mlon=31.255000#map=16/30.044400/31.255000"
+      },
+      "address": {
+        "en": "Bab Al-Khalq, Cairo, Egypt",
+        "ar": "باب الخلق، القاهرة، مصر"
+      },
+      "summary": {
+        "en": "Major museum of Islamic art and material culture, including manuscripts, ceramics, metalwork and architectural objects.",
+        "ar": "متحف رئيسي للفن والتراث المادي الإسلامي، بما يشمل المخطوطات والخزف والأعمال المعدنية والعناصر المعمارية."
+      },
+      "opening_hours": {
+        "en": "Check the official MOTA page before visiting; opening time data should be reconfirmed.",
+        "ar": "يرجى مراجعة صفحة الوزارة الرسمية قبل الزيارة؛ يجب إعادة تأكيد مواعيد الفتح."
+      },
+      "accessibility": {
+        "summary_en": "MOTA services list includes a ramped entrance, accessible toilet, sign language, elevator, Braille labels and parking. Confirm availability/booking and route-level details directly.",
+        "summary_ar": "تتضمن قائمة الخدمات لدى الوزارة مدخلًا بمنحدر ودورة مياه مهيأة وخدمة لغة الإشارة ومصعدًا وملصقات برايل ومواقف سيارات. يجب تأكيد التوافر والحجز وتفاصيل المسار مباشرة.",
+        "status": "Official services list available; confirm details"
+      },
+      "ticket_prices": [
+        {
+          "ticket_id": "T-ISLAMIC-FOREIGN-ADULT",
+          "visitor_group_en": "Foreigner adult",
+          "visitor_group_ar": "بالغ أجنبي",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 340,
+          "price_usd_approx": 6.35,
+          "price_status": "Current MOTA listing",
+          "notes_en": "The page lists foreigner and Egyptian tiers; confirm category applied to Arab/GCC visitors.",
+          "notes_ar": "تعرض الصفحة فئتي الأجانب والمصريين؛ تحقق من الفئة المطبقة على زوار الخليج والعرب.",
+          "source_url": "https://egymonuments.gov.eg/museums/museum-of-islamic-art/"
+        },
+        {
+          "ticket_id": "T-ISLAMIC-FOREIGN-STUDENT",
+          "visitor_group_en": "Foreigner student",
+          "visitor_group_ar": "طالب أجنبي",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 170,
+          "price_usd_approx": 3.18,
+          "price_status": "Current MOTA listing",
+          "notes_en": "Verify accepted student credentials and nationality tier.",
+          "notes_ar": "تحقق من إثبات الطالب المقبول وفئة الجنسية.",
+          "source_url": "https://egymonuments.gov.eg/museums/museum-of-islamic-art/"
+        }
+      ],
+      "official_url": "https://egymonuments.gov.eg/museums/museum-of-islamic-art/",
+      "accessibility_url": "https://egymonuments.gov.eg/museums/museum-of-islamic-art/",
+      "ticket_url": "https://egymonuments.gov.eg/museums/museum-of-islamic-art/",
+      "history_source_url": "https://egymonuments.gov.eg/museums/museum-of-islamic-art/",
+      "additional_notes": {
+        "en": "MOTA page lists foreign adult EGP 340 / student EGP 170. The same page lists Egyptian adult EGP 20 / student EGP 10 and free entry for Egyptian special-needs visitors; verify the applicable category for Arab and international visitors.",
+        "ar": "تذكر صفحة الوزارة ٣٤٠ جنيهًا للبالغ الأجنبي و١٧٠ للطالب، و٢٠ جنيهًا للبالغ المصري و١٠ للطالب، مع إعفاء للمصريين ذوي الاحتياجات الخاصة. تحقق من الفئة المناسبة للزوار العرب والدوليين."
+      },
+      "last_researched": "2026-10-19"
+    },
+    {
+      "id": "SITE-COPTIC-MUSEUM",
+      "name": {
+        "en": "The Coptic Museum",
+        "ar": "المتحف القبطي"
+      },
+      "type": {
+        "en": "Museum",
+        "ar": "متحف"
+      },
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      },
+      "coordinates": {
+        "latitude": 30.0062,
+        "longitude": 31.2303,
+        "status_en": "Approximate pin near Mar Girgis; verify main entrance pin.",
+        "status_ar": "إحداثية تقريبية بالقرب من مار جرجس؛ تحقق من مدخل المتحف.",
+        "map_url": "https://www.openstreetmap.org/?mlat=30.006200&mlon=31.230300#map=16/30.006200/31.230300"
+      },
+      "address": {
+        "en": "3 Mar Girgis Street, Old Cairo, Cairo Governorate, Egypt",
+        "ar": "٣ شارع مار جرجس، مصر القديمة، محافظة القاهرة، مصر"
+      },
+      "summary": {
+        "en": "Museum of Coptic art and heritage located in the historic Old Cairo religious complex.",
+        "ar": "متحف للفن والتراث القبطي يقع في مجمع مصر القديمة الديني التاريخي."
+      },
+      "opening_hours": {
+        "en": "MOTA visitor page lists 09:00–16:30; last ticket around 16:00. Reconfirm before visiting.",
+        "ar": "تذكر صفحة زيارة الوزارة 09:00–16:30؛ وآخر تذكرة نحو 16:00. يجب إعادة التأكيد قبل الزيارة."
+      },
+      "accessibility": {
+        "summary_en": "MOTA service listings mention a ramped entrance and elevator. Do not infer full wheelchair accessibility from these two features; route width, accessible restrooms and movement between both wings need confirmation.",
+        "summary_ar": "تذكر قوائم الخدمات لدى الوزارة وجود مدخل بمنحدر ومصعد. لا ينبغي استنتاج إتاحة كاملة للكراسي المتحركة من هاتين الميزتين فقط؛ يجب تأكيد عرض المسارات ودورات المياه وإمكانية الحركة بين الجناحين.",
+        "status": "Partial features listed; further verification required"
+      },
+      "ticket_prices": [
+        {
+          "ticket_id": "T-COPTIC-PAGE-A-ADULT",
+          "visitor_group_en": "Foreigner adult — page A",
+          "visitor_group_ar": "بالغ أجنبي — الصفحة أ",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 280,
+          "price_usd_approx": 5.23,
+          "price_status": "CONFLICT — do not publish",
+          "notes_en": "Another official MOTA subportal page lists different prices; confirm directly before using.",
+          "notes_ar": "تذكر صفحة رسمية فرعية أخرى سعرًا مختلفًا؛ يجب التأكيد مباشرة قبل الاستخدام.",
+          "source_url": "https://egymonuments.gov.eg/en/museums/the-coptic-museum"
+        },
+        {
+          "ticket_id": "T-COPTIC-PAGE-A-STUDENT",
+          "visitor_group_en": "Foreigner student — page A",
+          "visitor_group_ar": "طالب أجنبي — الصفحة أ",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 140,
+          "price_usd_approx": 2.61,
+          "price_status": "CONFLICT — do not publish",
+          "notes_en": "Another official MOTA subportal page lists different prices; confirm directly before using.",
+          "notes_ar": "تذكر صفحة رسمية فرعية أخرى سعرًا مختلفًا؛ يجب التأكيد مباشرة قبل الاستخدام.",
+          "source_url": "https://egymonuments.gov.eg/en/museums/the-coptic-museum"
+        },
+        {
+          "ticket_id": "T-COPTIC-PAGE-B-ADULT",
+          "visitor_group_en": "Foreigner adult — alternate official subportal",
+          "visitor_group_ar": "بالغ أجنبي — صفحة رسمية بديلة",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 100,
+          "price_usd_approx": 1.87,
+          "price_status": "CONFLICT — do not publish",
+          "notes_en": "Conflicts with the main MOTA museum page, which lists EGP 280 adult.",
+          "notes_ar": "يتعارض مع صفحة المتحف الرئيسية بالوزارة التي تذكر ٢٨٠ جنيهًا للبالغ.",
+          "source_url": "https://egymonuments.gov.eg/en/subportals-group/coptic-museum/coptic-museum-1-visit"
+        },
+        {
+          "ticket_id": "T-COPTIC-PAGE-B-STUDENT",
+          "visitor_group_en": "Foreigner student — alternate official subportal",
+          "visitor_group_ar": "طالب أجنبي — صفحة رسمية بديلة",
+          "ticket_type_en": "Standard admission",
+          "ticket_type_ar": "دخول عادي",
+          "price_egp": 50,
+          "price_usd_approx": 0.93,
+          "price_status": "CONFLICT — do not publish",
+          "notes_en": "Conflicts with the main MOTA museum page, which lists EGP 140 student.",
+          "notes_ar": "يتعارض مع صفحة المتحف الرئيسية بالوزارة التي تذكر ١٤٠ جنيهًا للطالب.",
+          "source_url": "https://egymonuments.gov.eg/en/subportals-group/coptic-museum/coptic-museum-1-visit"
+        }
+      ],
+      "official_url": "https://egymonuments.gov.eg/en/museums/the-coptic-museum",
+      "accessibility_url": "https://egymonuments.gov.eg/en/subportals-group/coptic-museum/coptic-museum-1-visit",
+      "ticket_url": "https://egymonuments.gov.eg/en/museums/the-coptic-museum",
+      "history_source_url": "https://egymonuments.gov.eg/en/museums/the-coptic-museum",
+      "additional_notes": {
+        "en": "Conflicting MOTA pages list different foreign-ticket prices (one lists EGP 280 adult / 140 student; another official subportal lists EGP 100 / 50 and different Egyptian/Arab prices). Do not publish a price until the museum confirms the current rate.",
+        "ar": "توجد أسعار متضاربة في صفحات الوزارة؛ إحداها تذكر ٢٨٠ جنيهًا للبالغ الأجنبي و١٤٠ للطالب، وأخرى رسمية فرعية تذكر ١٠٠ و٥٠ جنيهًا وأسعارًا مختلفة للمصريين/العرب. لا تنشروا السعر قبل تأكيد المتحف للسعر الحالي."
+      },
+      "last_researched": "2026-10-19"
+    }
+  ],
+  "accessibility_audit": [
+    {
+      "site_id": "SITE-GEM",
+      "site_name_en": "Grand Egyptian Museum (GEM)",
+      "site_name_ar": "المتحف المصري الكبير",
+      "feature_en": "Wheelchairs available",
+      "feature_ar": "توفير كراسٍ متحركة",
+      "status_en": "Confirmed",
+      "status_ar": "مؤكد",
+      "evidence_en": "The official accessibility page says wheelchairs are provided.",
+      "evidence_ar": "تذكر صفحة الإتاحة الرسمية توفير كراسٍ متحركة.",
+      "source_url": "https://gem.eg/visit/accessibility/"
+    },
+    {
+      "site_id": "SITE-GEM",
+      "site_name_en": "Grand Egyptian Museum (GEM)",
+      "site_name_ar": "المتحف المصري الكبير",
+      "feature_en": "Ramps / lifts / wide pathways",
+      "feature_ar": "منحدرات / مصاعد / ممرات واسعة",
+      "status_en": "Confirmed",
+      "status_ar": "مؤكد",
+      "evidence_en": "Official accessibility page / FAQ.",
+      "evidence_ar": "صفحة الإتاحة/الأسئلة الشائعة الرسمية.",
+      "source_url": "https://gem.eg/visit/accessibility/"
+    },
+    {
+      "site_id": "SITE-GEM",
+      "site_name_en": "Grand Egyptian Museum (GEM)",
+      "site_name_ar": "المتحف المصري الكبير",
+      "feature_en": "Accessible restrooms and rest seating",
+      "feature_ar": "دورات مياه مهيأة ومقاعد للراحة",
+      "status_en": "Confirmed",
+      "status_ar": "مؤكد",
+      "evidence_en": "Official accessibility page lists accessible restrooms and seating.",
+      "evidence_ar": "تذكر صفحة الإتاحة دورات مياه مهيأة ومقاعد.",
+      "source_url": "https://gem.eg/visit/accessibility/"
+    },
+    {
+      "site_id": "SITE-GEM",
+      "site_name_en": "Grand Egyptian Museum (GEM)",
+      "site_name_ar": "المتحف المصري الكبير",
+      "feature_en": "Golf carts / tactile replica / Braille",
+      "feature_ar": "عربات جولف / نموذج ملموس / برايل",
+      "status_en": "Confirmed",
+      "status_ar": "مؤكد",
+      "evidence_en": "Official accessibility page lists golf carts and tactile/Braille resource.",
+      "evidence_ar": "تذكر صفحة الإتاحة عربات الجولف ووسيلة ملموسة/برايل.",
+      "source_url": "https://gem.eg/visit/accessibility/"
+    },
+    {
+      "site_id": "SITE-GEM",
+      "site_name_en": "Grand Egyptian Museum (GEM)",
+      "site_name_ar": "المتحف المصري الكبير",
+      "feature_en": "Disability admission exemption",
+      "feature_ar": "إعفاء دخول للزوار ذوي الإعاقة",
+      "status_en": "Published policy; verify eligibility",
+      "status_ar": "سياسة منشورة؛ تُؤكد الأهلية",
+      "evidence_en": "Official FAQ says visitors with disabilities are exempt; confirm proof/nationality details.",
+      "evidence_ar": "تذكر الأسئلة الشائعة إعفاء الزوار ذوي الإعاقة؛ يجب تأكيد الإثبات/الجنسية.",
+      "source_url": "https://gem.eg/en/faqs"
+    },
+    {
+      "site_id": "SITE-GIZA-PLATEAU",
+      "site_name_en": "Giza Plateau",
+      "site_name_ar": "هضبة الجيزة",
+      "feature_en": "Step-free route and accessible toilets",
+      "feature_ar": "مسار دون درجات ودورات مياه مهيأة",
+      "status_en": "Unknown — field audit required",
+      "status_ar": "غير معروف — يتطلب معاينة ميدانية",
+      "evidence_en": "No complete official accessibility audit located in this research pass.",
+      "evidence_ar": "لم يتم العثور خلال هذه المرحلة على تقييم رسمي شامل للإتاحة.",
+      "source_url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/"
+    },
+    {
+      "site_id": "SITE-GIZA-PLATEAU",
+      "site_name_en": "Giza Plateau",
+      "site_name_ar": "هضبة الجيزة",
+      "feature_en": "Outdoor surface, distances and slopes",
+      "feature_ar": "طبيعة الأرض الخارجية والمسافات والمنحدرات",
+      "status_en": "Unknown — must verify",
+      "status_ar": "غير معروف — يجب التحقق",
+      "evidence_en": "Do not infer safe or accessible routing; inspect/confirm before advising visitors.",
+      "evidence_ar": "لا تستنتجوا أمان المسار أو إتاحته؛ افحصوه/أكدوه قبل إرشاد الزوار.",
+      "source_url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/"
+    },
+    {
+      "site_id": "SITE-EGYPTIAN-MUSEUM",
+      "site_name_en": "The Egyptian Museum (Tahrir)",
+      "site_name_ar": "المتحف المصري بالتحرير",
+      "feature_en": "Wheelchairs, ramps, lifts, designated bathrooms",
+      "feature_ar": "كراسٍ متحركة ومنحدرات ومصاعد ودورات مياه مخصصة",
+      "status_en": "Confirmed by museum amenities page",
+      "status_ar": "مؤكد بصفحة الخدمات",
+      "evidence_en": "Official amenities page lists these facilities.",
+      "evidence_ar": "تذكر صفحة الخدمات الرسمية هذه المرافق.",
+      "source_url": "https://egyptianmuseumcairo.eg/egyptian-museum-cairo-amenities/"
+    },
+    {
+      "site_id": "SITE-EGYPTIAN-MUSEUM",
+      "site_name_en": "The Egyptian Museum (Tahrir)",
+      "site_name_ar": "المتحف المصري بالتحرير",
+      "feature_en": "Braille-supported visit route",
+      "feature_ar": "مسار زيارة مدعوم ببرايل",
+      "status_en": "Confirmed by museum amenities page",
+      "status_ar": "مؤكد بصفحة الخدمات",
+      "evidence_en": "Official page describes a route with Braille signs explaining 12 artifacts.",
+      "evidence_ar": "تصف الصفحة مسارًا بإشارات برايل تشرح ١٢ قطعة أثرية.",
+      "source_url": "https://egyptianmuseumcairo.eg/egyptian-museum-cairo-amenities/"
+    },
+    {
+      "site_id": "SITE-EGYPTIAN-MUSEUM",
+      "site_name_en": "The Egyptian Museum (Tahrir)",
+      "site_name_ar": "المتحف المصري بالتحرير",
+      "feature_en": "First-aid unit on site",
+      "feature_ar": "وحدة إسعافات أولية داخل الموقع",
+      "status_en": "Confirmed by museum amenities page",
+      "status_ar": "مؤكد بصفحة الخدمات",
+      "evidence_en": "Official page says a first-aid unit is equipped inside the museum.",
+      "evidence_ar": "تذكر الصفحة وجود وحدة إسعافات أولية مجهزة داخل المتحف.",
+      "source_url": "https://egyptianmuseumcairo.eg/egyptian-museum-cairo-amenities/"
+    },
+    {
+      "site_id": "SITE-NMEC",
+      "site_name_en": "NMEC",
+      "site_name_ar": "المتحف القومي للحضارة المصرية",
+      "feature_en": "Wheelchairs and designated parking",
+      "feature_ar": "كراسٍ متحركة ومواقف مخصصة",
+      "status_en": "Confirmed",
+      "status_ar": "مؤكد",
+      "evidence_en": "Official accessibility page.",
+      "evidence_ar": "صفحة الإتاحة الرسمية.",
+      "source_url": "https://nmec.gov.eg/accessibility/"
+    },
+    {
+      "site_id": "SITE-NMEC",
+      "site_name_en": "NMEC",
+      "site_name_ar": "المتحف القومي للحضارة المصرية",
+      "feature_en": "Elevator access to all exhibits",
+      "feature_ar": "مصاعد للوصول إلى جميع المعروضات",
+      "status_en": "Confirmed",
+      "status_ar": "مؤكد",
+      "evidence_en": "Official accessibility page says all exhibits are accessible by elevator.",
+      "evidence_ar": "تذكر صفحة الإتاحة أن جميع المعروضات يمكن الوصول إليها بالمصعد.",
+      "source_url": "https://nmec.gov.eg/accessibility/"
+    },
+    {
+      "site_id": "SITE-NMEC",
+      "site_name_en": "NMEC",
+      "site_name_ar": "المتحف القومي للحضارة المصرية",
+      "feature_en": "Braille brochures / sign-language tours",
+      "feature_ar": "كتيبات برايل / جولات بلغة الإشارة",
+      "status_en": "Confirmed with conditions",
+      "status_ar": "مؤكد مع شروط",
+      "evidence_en": "Braille brochures on request; sign-language tours require advance reservation.",
+      "evidence_ar": "كتيبات برايل عند الطلب؛ وجولات لغة الإشارة تتطلب حجزًا مسبقًا.",
+      "source_url": "https://nmec.gov.eg/accessibility/"
+    },
+    {
+      "site_id": "SITE-ISLAMIC-ART",
+      "site_name_en": "Museum of Islamic Art",
+      "site_name_ar": "متحف الفن الإسلامي",
+      "feature_en": "Ramp, accessible toilet, elevator, Braille labels, sign language",
+      "feature_ar": "منحدر ودورة مياه مهيأة ومصعد وملصقات برايل ولغة الإشارة",
+      "status_en": "Features listed by MOTA; confirm availability",
+      "status_ar": "مدرجة لدى الوزارة؛ أكدوا التوافر",
+      "evidence_en": "MOTA service list contains these access services. Confirm details and reservation needs.",
+      "evidence_ar": "تتضمن قائمة خدمات الوزارة تجهيزات الإتاحة هذه. أكدوا التفاصيل والحجز المطلوب.",
+      "source_url": "https://egymonuments.gov.eg/museums/museum-of-islamic-art/"
+    },
+    {
+      "site_id": "SITE-COPTIC-MUSEUM",
+      "site_name_en": "The Coptic Museum",
+      "site_name_ar": "المتحف القبطي",
+      "feature_en": "Ramp entrance and elevator",
+      "feature_ar": "مدخل بمنحدر ومصعد",
+      "status_en": "Partially documented; route-level access unknown",
+      "status_ar": "موثق جزئيًا؛ إتاحة المسار غير معروفة",
+      "evidence_en": "MOTA subportal lists a ramp and elevator; more route and restroom details need direct verification.",
+      "evidence_ar": "تذكر صفحة فرعية للوزارة منحدرًا ومصعدًا؛ تحتاج تفاصيل المسار ودورات المياه إلى تأكيد مباشر.",
+      "source_url": "https://egymonuments.gov.eg/en/subportals-group/coptic-museum/coptic-museum-1-visit"
+    }
+  ],
+  "medical_providers": [
+    {
+      "id": "MED-GIZA-INTL",
+      "name": {
+        "en": "Giza International Hospital",
+        "ar": "مستشفى الجيزة الدولي"
+      },
+      "type": {
+        "en": "General hospital (directory-listed)",
+        "ar": "مستشفى عام (مدرج في دليل تجاري)"
+      },
+      "specialties": {
+        "en": "General hospital; exact departments and emergency service should be verified directly.",
+        "ar": "مستشفى؛ يجب التحقق مباشرة من الأقسام المتاحة وخدمة الطوارئ."
+      },
+      "address": {
+        "en": "334 El Haram Street, beside Banque Misr, El Haram, Giza, Egypt",
+        "ar": "٣٣٤ شارع الهرم، بجوار بنك مصر، الهرم، الجيزة، مصر"
+      },
+      "phone": "+20 2 3781 0017; +20 2 3781 0018",
+      "coordinates": {
+        "latitude": 29.9957,
+        "longitude": 31.1674,
+        "status": "Approximate map pin; verify",
+        "map_url": "https://www.openstreetmap.org/?mlat=29.995700&mlon=31.167400#map=16/29.995700/31.167400"
+      },
+      "accessibility_info": {
+        "en": "No verified disability-specific service/accommodation information found in the cited directory. Call to ask about step-free access, accessible toilets, interpreters and specialty availability.",
+        "ar": "لم يتم العثور على معلومات موثقة في الدليل المذكور عن خدمات/تجهيزات مخصصة للإعاقة. اتصلوا للاستفسار عن الدخول دون درجات ودورات المياه المهيأة والمترجمين والتخصصات."
+      },
+      "emergency_status": "Emergency department/hours not verified from an official source",
+      "publication_status": "Provisional provider record; phone and services must be rechecked",
+      "website_or_source": "https://yellowpages.com.eg/en/profile/giza-international-hospital/93955",
+      "notes": {
+        "en": "A third-party directory lists address and phone. Do not treat this as an official hospital page or promise 24/7/emergency service without calling.",
+        "ar": "يعرض دليل تجاري العنوان والهاتف. لا يُعامل كموقع رسمي للمستشفى ولا ينبغي تأكيد توفر الطوارئ/العمل على مدار الساعة دون الاتصال."
+      },
+      "last_researched": "2026-10-19"
+    },
+    {
+      "id": "MED-BAHEYA-HARAM",
+      "name": {
+        "en": "Baheya Haram Center",
+        "ar": "مركز بهية — فرع الهرم"
+      },
+      "type": {
+        "en": "Specialist cancer centre",
+        "ar": "مركز متخصص في علاج الأورام"
+      },
+      "specialties": {
+        "en": "Breast cancer early detection and treatment; oncology-related care and support. Not a general emergency provider.",
+        "ar": "الكشف المبكر عن سرطان الثدي وعلاجه وخدمات مرتبطة بالأورام والدعم. ليس جهة طوارئ عامة."
+      },
+      "address": {
+        "en": "4 Allouba Street, off El Haram Street, next to Dary, Giza, Egypt",
+        "ar": "٤ شارع علوّبة، متفرع من شارع الهرم، بجوار داري، الجيزة، مصر"
+      },
+      "phone": "16602",
+      "coordinates": {
+        "latitude": 29.9978,
+        "longitude": 31.1672,
+        "status": "Approximate map pin; verify",
+        "map_url": "https://www.openstreetmap.org/?mlat=29.997800&mlon=31.167200#map=16/29.997800/31.167200"
+      },
+      "accessibility_info": {
+        "en": "Specialist medical service is verified, but facility-specific wheelchair/accessible-transport details were not confirmed in the cited page. Call before visiting.",
+        "ar": "الخدمة الطبية التخصصية موثقة، لكن لم يتم تأكيد تفاصيل الكراسي المتحركة/النقل المهيأ في الصفحة المشار إليها. اتصلوا قبل الزيارة."
+      },
+      "emergency_status": "Not a general emergency department; services are specialist and scheduled according to the provider",
+      "publication_status": "Official provider information available; accessibility details need confirmation",
+      "website_or_source": "https://baheya.org/en/hospital/2",
+      "notes": {
+        "en": "Official source lists 09:00–21:00 working hours and hotline 16602. Confirm actual appointment availability and service eligibility.",
+        "ar": "المصدر الرسمي يذكر ساعات عمل 09:00–21:00 والخط الساخن 16602. يجب تأكيد المواعيد الفعلية وأهلية الاستفادة من الخدمة."
+      },
+      "last_researched": "2026-10-19"
+    },
+    {
+      "id": "MED-KASR-ALAINY",
+      "name": {
+        "en": "Cairo University Hospitals / Kasr Al Ainy",
+        "ar": "مستشفيات جامعة القاهرة / قصر العيني"
+      },
+      "type": {
+        "en": "University teaching hospital network",
+        "ar": "منظومة مستشفيات جامعية تعليمية"
+      },
+      "specialties": {
+        "en": "Multiple medical and surgical specialties through the university hospital system. Specific unit, access route and service availability must be confirmed.",
+        "ar": "تخصصات طبية وجراحية متعددة عبر منظومة المستشفيات الجامعية. يجب تأكيد القسم المحدد ومسار الوصول وتوفر الخدمة."
+      },
+      "address": {
+        "en": "Kasr Al Ainy / Al Manial area, Cairo, Egypt (contact the hospital network to confirm the exact building)",
+        "ar": "منطقة قصر العيني / المنيل، القاهرة، مصر (يجب التواصل لتأكيد المبنى المحدد)"
+      },
+      "phone": "+20 2 2364 7545 (Faculty of Medicine contact; not an emergency number)",
+      "coordinates": {
+        "latitude": 30.0296,
+        "longitude": 31.2315,
+        "status": "Approximate campus pin; verify the exact hospital building",
+        "map_url": "https://www.openstreetmap.org/?mlat=30.029600&mlon=31.231500#map=16/30.029600/31.231500"
+      },
+      "accessibility_info": {
+        "en": "Official university information confirms a large teaching-hospital network and describes elevators at the New Educational Hospital; do not assume every building or entrance has the same accessibility features.",
+        "ar": "تؤكد معلومات الجامعة الرسمية وجود منظومة مستشفيات تعليمية كبيرة وتذكر مصاعد في المستشفى التعليمي الجديد؛ لا تفترض أن كل مبنى أو مدخل يملك تجهيزات الإتاحة نفسها."
+      },
+      "emergency_status": "Specific emergency phone/service details not confirmed in the cited contact page",
+      "publication_status": "Official university information; exact unit and contact require confirmation",
+      "website_or_source": "https://www.cu.edu.eg/page.php?SubSectionId=105&pg=contentFront%2FSubSectionData.php",
+      "notes": {
+        "en": "The phone number is from the Faculty of Medicine contact page, not verified as an emergency switchboard. Users should be directed to Egyptian Ambulance Organization (123) for emergencies.",
+        "ar": "رقم الهاتف من صفحة التواصل بكلية الطب وليس خط طوارئ مؤكدًا. في الطوارئ، يجب توجيه المستخدمين إلى هيئة الإسعاف المصرية على ١٢٣."
+      },
+      "last_researched": "2026-10-19"
+    },
+    {
+      "id": "MED-AIN-EL-SIRA-CANDIDATE",
+      "name": {
+        "en": "Ain El Sira Hospital (candidate record)",
+        "ar": "مستشفى عين الصيرة (سجل مبدئي)"
+      },
+      "type": {
+        "en": "Hospital listing; unverified record",
+        "ar": "إدراج مستشفى؛ سجل غير متحقق منه"
+      },
+      "specialties": {
+        "en": "Not confirmed. Do not advertise a specialty until independently verified.",
+        "ar": "لم يتم التأكد من التخصصات. لا تُعلنوا عن تخصص قبل التحقق المستقل."
+      },
+      "address": {
+        "en": "Ain El Sira / Fustat area, Cairo, Egypt (exact street address not verified)",
+        "ar": "منطقة عين الصيرة / الفسطاط، القاهرة، مصر (لم يتم التحقق من العنوان التفصيلي)"
+      },
+      "phone": "Not verified",
+      "coordinates": {
+        "latitude": 29.9985,
+        "longitude": 31.247,
+        "status": "Approximate candidate pin from map directory; do not publish as confirmed",
+        "map_url": "https://www.openstreetmap.org/?mlat=29.998500&mlon=31.247000#map=16/29.998500/31.247000"
+      },
+      "accessibility_info": {
+        "en": "Unknown. Requires field/contact verification.",
+        "ar": "غير معلوم. يتطلب التحقق الميداني/بالتواصل."
+      },
+      "emergency_status": "Not verified",
+      "publication_status": "HOLD — internal research only; don't show to public until verified",
+      "website_or_source": "https://mapcarta.com/28191514",
+      "notes": {
+        "en": "A map directory identifies a hospital near NMEC, but official contact, exact address, current operating status and services were not verified in this research pass.",
+        "ar": "يحدد دليل خرائط مستشفى بالقرب من المتحف القومي للحضارة، لكن لم يتم التحقق من جهة الاتصال الرسمية أو العنوان الدقيق أو حالة التشغيل الحالية أو الخدمات خلال هذه المرحلة."
+      },
+      "last_researched": "2026-10-19"
+    }
+  ],
+  "medical_proximity": [
+    {
+      "site_id": "SITE-GEM",
+      "site_name_en": "Grand Egyptian Museum (GEM)",
+      "site_name_ar": "المتحف المصري الكبير",
+      "provider_id": "MED-BAHEYA-HARAM",
+      "provider_name_en": "Baheya Haram Center",
+      "provider_name_ar": "مركز بهية — فرع الهرم",
+      "estimated_straight_line_km": 5.5,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official provider information available; accessibility details need confirmation",
+      "source_url": "https://baheya.org/en/hospital/2"
+    },
+    {
+      "site_id": "SITE-GEM",
+      "site_name_en": "Grand Egyptian Museum (GEM)",
+      "site_name_ar": "المتحف المصري الكبير",
+      "provider_id": "MED-GIZA-INTL",
+      "provider_name_en": "Giza International Hospital",
+      "provider_name_ar": "مستشفى الجيزة الدولي",
+      "estimated_straight_line_km": 5.6,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Provisional provider record; phone and services must be rechecked",
+      "source_url": "https://yellowpages.com.eg/en/profile/giza-international-hospital/93955"
+    },
+    {
+      "site_id": "SITE-GEM",
+      "site_name_en": "Grand Egyptian Museum (GEM)",
+      "site_name_ar": "المتحف المصري الكبير",
+      "provider_id": "MED-KASR-ALAINY",
+      "provider_name_en": "Cairo University Hospitals / Kasr Al Ainy",
+      "provider_name_ar": "مستشفيات جامعة القاهرة / قصر العيني",
+      "estimated_straight_line_km": 11.6,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official university information; exact unit and contact require confirmation",
+      "source_url": "https://www.cu.edu.eg/page.php?SubSectionId=105&pg=contentFront%2FSubSectionData.php"
+    },
+    {
+      "site_id": "SITE-GIZA-PLATEAU",
+      "site_name_en": "Giza Plateau (Pyramids of Giza)",
+      "site_name_ar": "هضبة الجيزة (أهرامات الجيزة)",
+      "provider_id": "MED-GIZA-INTL",
+      "provider_name_en": "Giza International Hospital",
+      "provider_name_ar": "مستشفى الجيزة الدولي",
+      "estimated_straight_line_km": 3.7,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Provisional provider record; phone and services must be rechecked",
+      "source_url": "https://yellowpages.com.eg/en/profile/giza-international-hospital/93955"
+    },
+    {
+      "site_id": "SITE-GIZA-PLATEAU",
+      "site_name_en": "Giza Plateau (Pyramids of Giza)",
+      "site_name_ar": "هضبة الجيزة (أهرامات الجيزة)",
+      "provider_id": "MED-BAHEYA-HARAM",
+      "provider_name_en": "Baheya Haram Center",
+      "provider_name_ar": "مركز بهية — فرع الهرم",
+      "estimated_straight_line_km": 3.8,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official provider information available; accessibility details need confirmation",
+      "source_url": "https://baheya.org/en/hospital/2"
+    },
+    {
+      "site_id": "SITE-GIZA-PLATEAU",
+      "site_name_en": "Giza Plateau (Pyramids of Giza)",
+      "site_name_ar": "هضبة الجيزة (أهرامات الجيزة)",
+      "provider_id": "MED-KASR-ALAINY",
+      "provider_name_en": "Cairo University Hospitals / Kasr Al Ainy",
+      "provider_name_ar": "مستشفيات جامعة القاهرة / قصر العيني",
+      "estimated_straight_line_km": 10.9,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official university information; exact unit and contact require confirmation",
+      "source_url": "https://www.cu.edu.eg/page.php?SubSectionId=105&pg=contentFront%2FSubSectionData.php"
+    },
+    {
+      "site_id": "SITE-EGYPTIAN-MUSEUM",
+      "site_name_en": "The Egyptian Museum (Tahrir)",
+      "site_name_ar": "المتحف المصري بالتحرير",
+      "provider_id": "MED-KASR-ALAINY",
+      "provider_name_en": "Cairo University Hospitals / Kasr Al Ainy",
+      "provider_name_ar": "مستشفيات جامعة القاهرة / قصر العيني",
+      "estimated_straight_line_km": 2.0,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official university information; exact unit and contact require confirmation",
+      "source_url": "https://www.cu.edu.eg/page.php?SubSectionId=105&pg=contentFront%2FSubSectionData.php"
+    },
+    {
+      "site_id": "SITE-EGYPTIAN-MUSEUM",
+      "site_name_en": "The Egyptian Museum (Tahrir)",
+      "site_name_ar": "المتحف المصري بالتحرير",
+      "provider_id": "MED-AIN-EL-SIRA-CANDIDATE",
+      "provider_name_en": "Ain El Sira Hospital (candidate record)",
+      "provider_name_ar": "مستشفى عين الصيرة (سجل مبدئي)",
+      "estimated_straight_line_km": 5.6,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "HOLD — internal research only; don't show to public until verified",
+      "source_url": "https://mapcarta.com/28191514"
+    },
+    {
+      "site_id": "SITE-EGYPTIAN-MUSEUM",
+      "site_name_en": "The Egyptian Museum (Tahrir)",
+      "site_name_ar": "المتحف المصري بالتحرير",
+      "provider_id": "MED-BAHEYA-HARAM",
+      "provider_name_en": "Baheya Haram Center",
+      "provider_name_ar": "مركز بهية — فرع الهرم",
+      "estimated_straight_line_km": 8.5,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official provider information available; accessibility details need confirmation",
+      "source_url": "https://baheya.org/en/hospital/2"
+    },
+    {
+      "site_id": "SITE-NMEC",
+      "site_name_en": "National Museum of Egyptian Civilization (NMEC)",
+      "site_name_ar": "المتحف القومي للحضارة المصرية",
+      "provider_id": "MED-AIN-EL-SIRA-CANDIDATE",
+      "provider_name_en": "Ain El Sira Hospital (candidate record)",
+      "provider_name_ar": "مستشفى عين الصيرة (سجل مبدئي)",
+      "estimated_straight_line_km": 0.9,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "HOLD — internal research only; don't show to public until verified",
+      "source_url": "https://mapcarta.com/28191514"
+    },
+    {
+      "site_id": "SITE-NMEC",
+      "site_name_en": "National Museum of Egyptian Civilization (NMEC)",
+      "site_name_ar": "المتحف القومي للحضارة المصرية",
+      "provider_id": "MED-KASR-ALAINY",
+      "provider_name_en": "Cairo University Hospitals / Kasr Al Ainy",
+      "provider_name_ar": "مستشفيات جامعة القاهرة / قصر العيني",
+      "estimated_straight_line_km": 3.1,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official university information; exact unit and contact require confirmation",
+      "source_url": "https://www.cu.edu.eg/page.php?SubSectionId=105&pg=contentFront%2FSubSectionData.php"
+    },
+    {
+      "site_id": "SITE-NMEC",
+      "site_name_en": "National Museum of Egyptian Civilization (NMEC)",
+      "site_name_ar": "المتحف القومي للحضارة المصرية",
+      "provider_id": "MED-BAHEYA-HARAM",
+      "provider_name_en": "Baheya Haram Center",
+      "provider_name_ar": "مركز بهية — فرع الهرم",
+      "estimated_straight_line_km": 7.8,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official provider information available; accessibility details need confirmation",
+      "source_url": "https://baheya.org/en/hospital/2"
+    },
+    {
+      "site_id": "SITE-ISLAMIC-ART",
+      "site_name_en": "Museum of Islamic Art",
+      "site_name_ar": "متحف الفن الإسلامي",
+      "provider_id": "MED-KASR-ALAINY",
+      "provider_name_en": "Cairo University Hospitals / Kasr Al Ainy",
+      "provider_name_ar": "مستشفيات جامعة القاهرة / قصر العيني",
+      "estimated_straight_line_km": 2.8,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official university information; exact unit and contact require confirmation",
+      "source_url": "https://www.cu.edu.eg/page.php?SubSectionId=105&pg=contentFront%2FSubSectionData.php"
+    },
+    {
+      "site_id": "SITE-ISLAMIC-ART",
+      "site_name_en": "Museum of Islamic Art",
+      "site_name_ar": "متحف الفن الإسلامي",
+      "provider_id": "MED-AIN-EL-SIRA-CANDIDATE",
+      "provider_name_en": "Ain El Sira Hospital (candidate record)",
+      "provider_name_ar": "مستشفى عين الصيرة (سجل مبدئي)",
+      "estimated_straight_line_km": 5.2,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "HOLD — internal research only; don't show to public until verified",
+      "source_url": "https://mapcarta.com/28191514"
+    },
+    {
+      "site_id": "SITE-ISLAMIC-ART",
+      "site_name_en": "Museum of Islamic Art",
+      "site_name_ar": "متحف الفن الإسلامي",
+      "provider_id": "MED-BAHEYA-HARAM",
+      "provider_name_en": "Baheya Haram Center",
+      "provider_name_ar": "مركز بهية — فرع الهرم",
+      "estimated_straight_line_km": 9.9,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official provider information available; accessibility details need confirmation",
+      "source_url": "https://baheya.org/en/hospital/2"
+    },
+    {
+      "site_id": "SITE-COPTIC-MUSEUM",
+      "site_name_en": "The Coptic Museum",
+      "site_name_ar": "المتحف القبطي",
+      "provider_id": "MED-AIN-EL-SIRA-CANDIDATE",
+      "provider_name_en": "Ain El Sira Hospital (candidate record)",
+      "provider_name_ar": "مستشفى عين الصيرة (سجل مبدئي)",
+      "estimated_straight_line_km": 1.8,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "HOLD — internal research only; don't show to public until verified",
+      "source_url": "https://mapcarta.com/28191514"
+    },
+    {
+      "site_id": "SITE-COPTIC-MUSEUM",
+      "site_name_en": "The Coptic Museum",
+      "site_name_ar": "المتحف القبطي",
+      "provider_id": "MED-KASR-ALAINY",
+      "provider_name_en": "Cairo University Hospitals / Kasr Al Ainy",
+      "provider_name_ar": "مستشفيات جامعة القاهرة / قصر العيني",
+      "estimated_straight_line_km": 2.6,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official university information; exact unit and contact require confirmation",
+      "source_url": "https://www.cu.edu.eg/page.php?SubSectionId=105&pg=contentFront%2FSubSectionData.php"
+    },
+    {
+      "site_id": "SITE-COPTIC-MUSEUM",
+      "site_name_en": "The Coptic Museum",
+      "site_name_ar": "المتحف القبطي",
+      "provider_id": "MED-BAHEYA-HARAM",
+      "provider_name_en": "Baheya Haram Center",
+      "provider_name_ar": "مركز بهية — فرع الهرم",
+      "estimated_straight_line_km": 6.1,
+      "method_en": "Approximate straight-line distance from provisional map pins; NOT driving distance or confirmation of emergency suitability.",
+      "method_ar": "مسافة خط مستقيم تقريبية من إحداثيات مبدئية؛ ليست مسافة قيادة ولا تأكيدًا لملاءمة الجهة للطوارئ.",
+      "provider_status": "Official provider information available; accessibility details need confirmation",
+      "source_url": "https://baheya.org/en/hospital/2"
+    }
+  ],
+  "tour_price_benchmarks": [
+    {
+      "id": "TOUR-TBL-CAIRO-FULL",
+      "name": {
+        "en": "Full-Day Private Cairo City Tour",
+        "ar": "جولة خاصة ليوم كامل في القاهرة"
+      },
+      "provider": "ToursByLocals",
+      "duration": {
+        "en": "About 6 hours",
+        "ar": "حوالي ٦ ساعات"
+      },
+      "booking_unit": {
+        "en": "Total listed price for a private group (listed for 1–6 people)",
+        "ar": "سعر إجمالي منشور لمجموعة خاصة (مدرج لـ ١–٦ أشخاص)"
+      },
+      "price": {
+        "usd": 440,
+        "egp_approx": 23558.0,
+        "fx_rate_egp_per_usd": 53.54,
+        "fx_date": "2026-10-19"
+      },
+      "inclusions": {
+        "en": "Listing describes private transportation; final inclusions must be checked on the individual tour page.",
+        "ar": "يصف الإدراج توفير نقل خاص؛ يجب التحقق من المشتملات النهائية في صفحة الجولة نفسها."
+      },
+      "accessibility_warning": {
+        "en": "Found through wheelchair-accessible Cairo tour category. Confirm with the individual operator the exact vehicle, boarding method, step-free routes, restroom stops and whether the itinerary suits the guest's specific mobility requirements.",
+        "ar": "ظهر ضمن فئة الجولات المهيأة للكراسي المتحركة في القاهرة. يجب تأكيد نوع السيارة وطريقة الصعود والمسارات دون درجات ومحطات دورات المياه ومدى ملاءمة البرنامج لاحتياجات الحركة الفعلية مع مقدم الخدمة."
+      },
+      "source_url": "https://www.toursbylocals.com/tours/egypt/cairo/wheelchair-accessible-tours",
+      "status": "Marketplace price benchmark; verify live quote and accessibility directly"
+    },
+    {
+      "id": "TOUR-TBL-GIZA-GEM",
+      "name": {
+        "en": "Giza Pyramids + Grand Egyptian Museum (private tour listing)",
+        "ar": "جولة خاصة للأهرامات + المتحف المصري الكبير"
+      },
+      "provider": "ToursByLocals",
+      "duration": {
+        "en": "About 7 hours",
+        "ar": "حوالي ٧ ساعات"
+      },
+      "booking_unit": {
+        "en": "Starting price for a private tour listed for up to 1–10 people; confirm exact group cap and quote",
+        "ar": "سعر يبدأ من جولة خاصة مدرجة لما يصل إلى ١–١٠ أشخاص؛ يجب تأكيد الحد الأقصى والسعر"
+      },
+      "price": {
+        "usd": 248,
+        "egp_approx": 13278.0,
+        "fx_rate_egp_per_usd": 53.54,
+        "fx_date": "2026-10-19"
+      },
+      "inclusions": {
+        "en": "Listing describes private transportation; admission tickets, guide, vehicle accessibility and other inclusions need confirmation.",
+        "ar": "يصف الإدراج توفير نقل خاص؛ يجب تأكيد تذاكر الدخول والمرشد وإتاحة السيارة والمشتملات الأخرى."
+      },
+      "accessibility_warning": {
+        "en": "Listing was surfaced in the wheelchair-accessible tour category, but that does not certify every itinerary or vehicle. Confirm accessibility details and the feasibility of outdoor/uneven terrain at Giza.",
+        "ar": "ظهر الإدراج ضمن فئة الجولات المهيأة للكراسي المتحركة، لكن هذا لا يثبت إتاحة كل برنامج أو سيارة. يجب تأكيد تفاصيل الإتاحة وإمكانية التعامل مع الأرض الخارجية وغير المستوية في الجيزة."
+      },
+      "source_url": "https://www.toursbylocals.com/tours/egypt/cairo/wheelchair-accessible-tours",
+      "status": "Marketplace starting-price benchmark; not a guaranteed offer"
+    }
+  ],
+  "emergency_contacts": [
+    {
+      "contact_id": "EMERGENCY-AMBULANCE-EGYPT",
+      "name_en": "Egyptian Ambulance Organization",
+      "name_ar": "هيئة الإسعاف المصرية",
+      "purpose_en": "Emergency ambulance service",
+      "purpose_ar": "خدمة الإسعاف في حالات الطوارئ",
+      "number": "123",
+      "notes_en": "Official Egyptian Ambulance Organization website lists 123. In a real emergency, call the local emergency service; do not rely on this website dataset alone.",
+      "notes_ar": "يعرض الموقع الرسمي لهيئة الإسعاف المصرية الرقم ١٢٣. في حالة الطوارئ الفعلية، اتصل بخدمة الطوارئ المحلية ولا تعتمد على بيانات الموقع وحدها.",
+      "source": "https://eao.gov.eg/"
+    },
+    {
+      "contact_id": "EMERGENCY-GENERAL-EGYPT",
+      "name_en": "General Emergency Number (Egypt)",
+      "name_ar": "رقم الطوارئ العام في مصر",
+      "purpose_en": "General emergency contact listed by National Telecom Regulatory Authority",
+      "purpose_ar": "رقم طوارئ عام منشور من الجهاز القومي لتنظيم الاتصالات",
+      "number": "112",
+      "notes_en": "The NTRA page lists 112 for general emergencies. Retain attribution and verify before launch.",
+      "notes_ar": "تعرض صفحة الجهاز القومي لتنظيم الاتصالات الرقم ١١٢ للطوارئ العامة. احتفظوا بالمصدر وأعيدوا التحقق قبل إطلاق الموقع.",
+      "source": "https://www.tra.gov.eg/en/atrc-faq/important-telephone-numbers/"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-GEM-TICKETS",
+      "title_en": "Grand Egyptian Museum official ticketing portal",
+      "title_ar": "الموقع الرسمي لحجز تذاكر المتحف المصري الكبير",
+      "organization": "Grand Egyptian Museum",
+      "supports": "Tickets / ticket classes",
+      "url": "https://tickets.gem.eg/en/AdmissionTkt",
+      "source_quality": "Official primary source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Displays EGP 1,590 for Arab/other-nationality adults and EGP 800 child/student. Recheck live at booking."
+    },
+    {
+      "source_id": "SRC-GEM-ACCESS",
+      "title_en": "GEM Accessibility",
+      "title_ar": "إتاحة المتحف المصري الكبير",
+      "organization": "Grand Egyptian Museum",
+      "supports": "Wheelchairs, ramps, lifts, accessible toilets, golf carts, tactile/Braille, seating",
+      "url": "https://gem.eg/visit/accessibility/",
+      "source_quality": "Official primary source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Direct accessibility claims should be sourced from this page; details can change."
+    },
+    {
+      "source_id": "SRC-GEM-FAQ",
+      "title_en": "GEM FAQs",
+      "title_ar": "الأسئلة الشائعة للمتحف المصري الكبير",
+      "organization": "Grand Egyptian Museum",
+      "supports": "Opening hours, directions, disability fee exemption",
+      "url": "https://gem.eg/en/faqs",
+      "source_quality": "Official primary source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Confirm proof/eligibility rules with museum."
+    },
+    {
+      "source_id": "SRC-GIZA-MOTA",
+      "title_en": "Giza Plateau — Discover Egypt's Monuments",
+      "title_ar": "هضبة الجيزة — اكتشف آثار مصر",
+      "organization": "Ministry of Tourism and Antiquities",
+      "supports": "Site overview, hours, area ticket prices",
+      "url": "https://egymonuments.gov.eg/en/archaeological-sites/giza-plateau/",
+      "source_quality": "Government source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Published foreigner area ticket does not include separately ticketed pyramid interiors."
+    },
+    {
+      "source_id": "SRC-GREAT-PYRAMID",
+      "title_en": "The Great Pyramid — Discover Egypt's Monuments",
+      "title_ar": "الهرم الأكبر — اكتشف آثار مصر",
+      "organization": "Ministry of Tourism and Antiquities",
+      "supports": "Additional Great Pyramid entry ticket",
+      "url": "https://egymonuments.gov.eg/monuments/the-great-pyramid/",
+      "source_quality": "Government source",
+      "reviewed_on": "2026-10-19",
+      "notes": "An area-entry ticket is also required."
+    },
+    {
+      "source_id": "SRC-EGYPTIAN-MUSEUM",
+      "title_en": "The Egyptian Museum — Discover Egypt's Monuments",
+      "title_ar": "المتحف المصري — اكتشف آثار مصر",
+      "organization": "Ministry of Tourism and Antiquities",
+      "supports": "Hours, foreign/Egyptian ticket prices, free-entry rules",
+      "url": "https://egymonuments.gov.eg/en/museums/egyptian-museum/",
+      "source_quality": "Government source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Free-entry policy on page specifically mentions Egyptians with special needs."
+    },
+    {
+      "source_id": "SRC-EMC-ACCESS",
+      "title_en": "Egyptian Museum Cairo amenities",
+      "title_ar": "خدمات المتحف المصري بالقاهرة",
+      "organization": "Egyptian Museum Cairo",
+      "supports": "Wheelchairs, ramps, lifts, accessible toilets, Braille route, first aid",
+      "url": "https://egyptianmuseumcairo.eg/egyptian-museum-cairo-amenities/",
+      "source_quality": "Official museum source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Reconfirm facilities/availability before visit."
+    },
+    {
+      "source_id": "SRC-NMEC-ACCESS",
+      "title_en": "NMEC Accessibility",
+      "title_ar": "إتاحة المتحف القومي للحضارة المصرية",
+      "organization": "National Museum of Egyptian Civilization",
+      "supports": "Wheelchairs, parking, elevator access, Braille, sign language tours",
+      "url": "https://nmec.gov.eg/accessibility/",
+      "source_quality": "Official museum source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Sign-language tours require advance reservation; Braille brochure on request."
+    },
+    {
+      "source_id": "SRC-NMEC-MOTA",
+      "title_en": "National Museum of Egyptian Civilization (NMEC)",
+      "title_ar": "المتحف القومي للحضارة المصرية",
+      "organization": "Ministry of Tourism and Antiquities",
+      "supports": "Opening hours and ticket prices",
+      "url": "https://egymonuments.gov.eg/en/museums/national-museum-of-egyptian-civilization-nmec",
+      "source_quality": "Government source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Recheck seasonal hours and ticket status."
+    },
+    {
+      "source_id": "SRC-ISLAMIC",
+      "title_en": "Museum of Islamic Art",
+      "title_ar": "متحف الفن الإسلامي",
+      "organization": "Ministry of Tourism and Antiquities",
+      "supports": "Ticket prices, accessibility service list",
+      "url": "https://egymonuments.gov.eg/museums/museum-of-islamic-art/",
+      "source_quality": "Government source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Arab visitor pricing category is not clearly separated; verify directly."
+    },
+    {
+      "source_id": "SRC-COPTIC-A",
+      "title_en": "The Coptic Museum",
+      "title_ar": "المتحف القبطي",
+      "organization": "Ministry of Tourism and Antiquities",
+      "supports": "Ticket price listing and museum info",
+      "url": "https://egymonuments.gov.eg/en/museums/the-coptic-museum",
+      "source_quality": "Government source; price conflict identified",
+      "reviewed_on": "2026-10-19",
+      "notes": "Lists EGP 280 adult / EGP 140 student for foreigners."
+    },
+    {
+      "source_id": "SRC-COPTIC-B",
+      "title_en": "Coptic Museum visit page",
+      "title_ar": "صفحة زيارة المتحف القبطي",
+      "organization": "Ministry of Tourism and Antiquities",
+      "supports": "Accessibility services and alternate price listing",
+      "url": "https://egymonuments.gov.eg/en/subportals-group/coptic-museum/coptic-museum-1-visit",
+      "source_quality": "Government subportal; price conflict identified",
+      "reviewed_on": "2026-10-19",
+      "notes": "Lists a different price tier; current price must be confirmed before public display."
+    },
+    {
+      "source_id": "SRC-TOURS-ACCESS",
+      "title_en": "Wheelchair Accessible Tours in Cairo",
+      "title_ar": "جولات مهيأة للكراسي المتحركة في القاهرة",
+      "organization": "ToursByLocals",
+      "supports": "Tour price-market examples, private tour listings",
+      "url": "https://www.toursbylocals.com/tours/egypt/cairo/wheelchair-accessible-tours",
+      "source_quality": "Commercial marketplace; provider confirmation needed",
+      "reviewed_on": "2026-10-19",
+      "notes": "Prices are market benchmarks only. Confirm exact accessibility, vehicle, inclusions, dates and price directly with the individual operator."
+    },
+    {
+      "source_id": "SRC-FX",
+      "title_en": "USD/EGP Historical Data",
+      "title_ar": "بيانات تاريخية لسعر الدولار/الجنيه",
+      "organization": "Investing.com",
+      "supports": "Reference FX rate 53.54 EGP/USD",
+      "url": "https://www.investing.com/currencies/usd-egp-historical-data",
+      "source_quality": "Market data site",
+      "reviewed_on": "2026-10-19",
+      "notes": "Used only for approximate conversions; rates vary and card/bank conversion may differ."
+    },
+    {
+      "source_id": "SRC-BAHEYA",
+      "title_en": "Baheya Haram Center",
+      "title_ar": "مركز بهية فرع الهرم",
+      "organization": "Baheya Foundation",
+      "supports": "Address, hours, hotline, breast-cancer-related services",
+      "url": "https://baheya.org/en/hospital/2",
+      "source_quality": "Official provider source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Specialist cancer-care provider, not general emergency provider."
+    },
+    {
+      "source_id": "SRC-BAHEYA-SERVICES",
+      "title_en": "Baheya services",
+      "title_ar": "خدمات بهية",
+      "organization": "Baheya Foundation",
+      "supports": "Breast cancer care, physiotherapy, oncology-related services",
+      "url": "https://baheya.org/en/services/17",
+      "source_quality": "Official provider source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Do not infer disability access from clinical specialization."
+    },
+    {
+      "source_id": "SRC-CU-HOSPITALS",
+      "title_en": "El Qasr El Ainy New Educational Hospital",
+      "title_ar": "مستشفى قصر العيني التعليمي الجديد",
+      "organization": "Cairo University",
+      "supports": "Hospital scope and lifts in the New Educational Hospital",
+      "url": "https://www.cu.edu.eg/page.php?SubSectionId=105&pg=contentFront%2FSubSectionData.php",
+      "source_quality": "Official university source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Phone shown separately is Faculty of Medicine contact, not an emergency number."
+    },
+    {
+      "source_id": "SRC-GIZA-HOSPITAL",
+      "title_en": "Giza International Hospital listing",
+      "title_ar": "إدراج مستشفى الجيزة الدولي",
+      "organization": "Egypt Yellow Pages",
+      "supports": "Address and contact numbers",
+      "url": "https://yellowpages.com.eg/en/profile/giza-international-hospital/93955",
+      "source_quality": "Third-party directory; verify by phone",
+      "reviewed_on": "2026-10-19",
+      "notes": "Not a hospital-owned official source; keep as provisional."
+    },
+    {
+      "source_id": "SRC-AIN-EL-SIRA",
+      "title_en": "Ain El Sira Hospital map listing",
+      "title_ar": "إدراج مستشفى عين الصيرة على الخريطة",
+      "organization": "Mapcarta",
+      "supports": "Candidate nearby hospital location by NMEC",
+      "url": "https://mapcarta.com/28191514",
+      "source_quality": "Map directory; weak evidence",
+      "reviewed_on": "2026-10-19",
+      "notes": "Exact address/contact/current service not verified; keep unpublished until confirmed."
+    },
+    {
+      "source_id": "SRC-AMBULANCE",
+      "title_en": "Egyptian Ambulance Organization",
+      "title_ar": "هيئة الإسعاف المصرية",
+      "organization": "Egyptian Ambulance Organization",
+      "supports": "National ambulance number 123",
+      "url": "https://eao.gov.eg/",
+      "source_quality": "Official government provider source",
+      "reviewed_on": "2026-10-19",
+      "notes": "Emergency contact; include disclaimer to call local emergency service."
+    },
+    {
+      "source_id": "SRC-NTRA-EMERGENCY",
+      "title_en": "Important telephone numbers",
+      "title_ar": "أرقام الهاتف المهمة",
+      "organization": "National Telecom Regulatory Authority",
+      "supports": "General emergency number 112 and ambulance 123",
+      "url": "https://www.tra.gov.eg/en/atrc-faq/important-telephone-numbers/",
+      "source_quality": "Official regulator",
+      "reviewed_on": "2026-10-19",
+      "notes": "Verify numbers and service applicability before launch."
+    }
+  ]
+}
